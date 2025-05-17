@@ -4,6 +4,7 @@
 
 I made this board since all the solutions that I found to interface the LinuxCNC controller software and the CNC hardware using a Raspberry Pi envolved the use of a board on the Rpi to convert the GPIOs to the parallel interface, and then use a second board to interface the Parallel port with the CNC hardware itself.
 
+## Hardware
 I designed this board taking into account the hardware I already had to control the CNC, namely DM556T stepper drivers, a VFD spindler and active low home and limit switches, up to 5 axes can be controlled and the outputs used for this are open collector type, which opens up a wide range of stepper controllers. 
 
 ### Main features 
@@ -11,24 +12,13 @@ I designed this board taking into account the hardware I already had to control 
 - 1 open collector output for steppers ENABLE
 - P-Mosfet PWM controled (up to 40V and 20Amps)
 - 0-10V VFD control from PWM
-- Relayoutput
+- Relay output (up to 230V and 10Amps)
 - 2 VCC outputs (500mA and 1.5Amps)
 - 8 inputs with hardware debounce and external pull-up (active low, can be inverted in software)
 - 12 to 24V power IN
 - Included DC-DC step down buck converter to power RPi and 5V rail
-- 
-
-***Automated Remote/Robotic Observatories*** with **Roll-Off-Roof** or non-rotating **Clamshell Domes** design.
-
-A _***Remote*** Observatory_ is any observatory that can be operated without a physical presence near the equipment, whether the user is in the next room or on the other side of the planet. Of course, if the user is in the next room, he can more easily resolve any problem/emergency that arises, on the other hand if you are on the other side of the planet things are more complicated, in the development of _Aro-Master_ we tried to take this into account.    
-In addition to sliding _Roof_ movement management and _Pier_ management, one of the essential requirements was the need to close the roof even when the power supply fails, for this purpose an integrated switching power supply (SMPS) + uninterruptible power supply (UPS) + battery management system (BMS) system was used, along with a simple 12V external battery (Gel, AGM, Acid), which allows security for remote operation.
-
-This is a project that tries to maintain the KISS philosophy as much as possible, without the usual mess of folders and files in the Github repository as sometimes happens, especially when it comes to software/firmware.  
-The software was written in C/C++ (no, it does not use "arduinos" or interpreted languages byte-code or not, nor _copy & paste code_ from others, nor a huge amount of libs made by no one knows exactly who or what type of code they contain) and it doesn't even have dependencies on other libs besides the normal Linux ones. Remote control must be taken very seriously, all code must be fully under our control and be fail proof.  
-The PCB board and electronic schematics were designed with Eagle 6, PCB boards can be obtained directly from me or ordered directly from one of the many board manufacturers.
-Below in the licensing section you can read more information on how to obtain the firmware and the complete assembled version of ARO-Master.
-
-## Main components are:
+ 
+## Software and HAL driver
 ### ***ARO-Master*** control box
 Hardware & firmware that implement the server/daemon for Observatory control (remote and local).  
 This is the main brains that allows you to connect and control all the equipment, open/close the roof, see weather conditions, see the sky, see the observatory interior, control user login, control the Piers etc.
