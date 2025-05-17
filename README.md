@@ -20,7 +20,7 @@ I designed this board taking into account the hardware I already had to control 
 
 This an example of the basic setup with the essential components to operate a 3 axis CNC/Mill/Router:
 
-![image](https://github.com/user-attachments/assets/f2b1fe60-120e-41a3-a7bb-c05bc8d5ef47)
+![image](https://github.com/user-attachments/assets/122230fe-f772-4a62-bf6e-e74e857a42a0)
 
  
 ## Software and HAL driver
