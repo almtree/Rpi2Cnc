@@ -18,7 +18,7 @@ I designed this board taking into account the hardware I already had to control 
 - 12 to 24V power IN
 - Included DC-DC step down buck converter to power RPi and 5V rail
 
-This an example of the basic setup with the essential components to operate a CNC/Mill/Router:
+This an example of the basic setup with the essential components to operate a 3 axis CNC/Mill/Router:
 
 ![image](https://github.com/user-attachments/assets/f2b1fe60-120e-41a3-a7bb-c05bc8d5ef47)
 
