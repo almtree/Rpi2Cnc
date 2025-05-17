@@ -22,11 +22,14 @@ I designed this board taking into account the hardware I already had to control 
 The main CNC control software is off course LinuxCN. I won't go into detail about what it is, how it works or how to install LinuxCNC on a Raspberru Pi, You can find all this information on the [LinuxCNC website](https://linuxcnc.org/)
 
 ### HAL driver
+Hardware Abstraction Layer (HAL) is a software layer that provides hardware abstraction for operating systems such as UNIX. In short, it allows programs like LinuxCNC to use any hardware by using a driver.
+When we use a Raspberry Pi to run LinuxCNC the HAL driver for the Raspberry GPIOs can be this one: [Generic driver for any GPIO supported by gpiod](https://linuxcnc.org/docs/devel/html/drivers/hal_gpio.html).
+
+
 Hardware & firmware that implement the server/daemon for Observatory control (remote and local).  
 This is the main brains that allows you to connect and control all the equipment, open/close the roof, see weather conditions, see the sky, see the observatory interior, control user login, control the Piers etc.
-### ***Pier-Relays*** box <sup>optional</sup>
-Relays box for each _Pier_ that is connected to ARO-Master, allows you to turn on and off the equipment (mount, PC, power box, etc.).  
-Up to 6 _Piers_ can coexist at the same observatory (this limit is a practical matter, technically it is possible to expand the system to use up to 64 _Piers_, but an observatory with more piers implies a larger and heavier sliding roof which will require a more powerful motor and greater power supply requirements).
+
+Generic driver for any GPIO supported by gpiod
 
 ## License
 When I made the decision to share this project I intended to make it public, but recent developments have changed that intention.
