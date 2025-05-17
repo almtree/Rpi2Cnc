@@ -45,32 +45,32 @@ The GPIO mapping (using the above HAL driver) for this Raspberry Pi board is:
 
 | GPIO | Function |
 | ------------- | ------------- |
-|"GPIO2"|  |
-|"GPIO3"|  |
-|"GPIO4"|  |
+|"GPIO2"| Input 1 |
+|"GPIO3"| Relay ON |
+|"GPIO4"| Input 2 |
 |"GPIO5"|  |
 |"GPIO6"|  |
 |"GPIO7"|  |
 |"GPIO8"|  |
-|"GPIO9"|  |
-|"GPIO10"|  |
-|"GPIO11"|  |
+|"GPIO9"| Input 7 |
+|"GPIO10"| Input 6 |
+|"GPIO11"| Input 8 |
 |"GPIO12"|  |
 |"GPIO13"|  |
 |"GPIO14"|  |
 |"GPIO15"|  |
 |"GPIO16"|  |
-|"GPIO17"|  |
+|"GPIO17"| Input 3 |
 |"GPIO18"|  |
 |"GPIO19"|  |
 |"GPIO20"|  |
 |"GPIO21"|  |
-|"GPIO22"|  |
+|"GPIO22"| Input 5 |
 |"GPIO23"|  |
 |"GPIO24"|  |
 |"GPIO25"|  |
 |"GPIO26"|  |
-|"GPIO27"|  |
+|"GPIO27"| Input 4 |
  
 ## License
 When I made the decision to share this project I intended to make it public, but recent developments have changed that intention.
