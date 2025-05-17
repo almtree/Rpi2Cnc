@@ -49,27 +49,27 @@ The GPIO mapping (using the above HAL driver) for this Raspberry Pi board is:
 |"GPIO3"| Relay ON |
 |"GPIO4"| Input 2 |
 |"GPIO5"|  |
-|"GPIO6"|  |
+|"GPIO6"| Spare |
 |"GPIO7"|  |
 |"GPIO8"|  |
 |"GPIO9"| Input 7 |
 |"GPIO10"| Input 6 |
 |"GPIO11"| Input 8 |
-|"GPIO12"|  |
-|"GPIO13"|  |
+|"GPIO12"| PWM0-VFD |
+|"GPIO13"| PWM1-FET |
 |"GPIO14"|  |
 |"GPIO15"|  |
 |"GPIO16"|  |
 |"GPIO17"| Input 3 |
 |"GPIO18"|  |
-|"GPIO19"|  |
+|"GPIO19"| V-Out2 |
 |"GPIO20"|  |
 |"GPIO21"|  |
 |"GPIO22"| Input 5 |
 |"GPIO23"|  |
 |"GPIO24"|  |
 |"GPIO25"|  |
-|"GPIO26"|  |
+|"GPIO26"| V-Out1 |
 |"GPIO27"| Input 4 |
  
 ## License
