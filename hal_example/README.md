@@ -1,19 +1,16 @@
 
 # Rpi2Cnc - HAL setup on LinuxCNC
 
-# Work in progress 
-# Rpi2Cnc - HAL setup on LinuxCNC
 
-The main CNC control software is off course LinuxCN. I won't go into detail about what it is, how it works or how to install LinuxCNC on a Raspberru Pi, You can find all this information on the [LinuxCNC website](https://linuxcnc.org/)
+> [!IMPORTANT]
+> Work in progress!! This is still in the making ...
 
-### HAL driver
-Hardware Abstraction Layer (HAL) is a software layer that provides hardware abstraction for operating systems such as UNIX. In short, it allows programs like LinuxCNC to use any hardware by using a driver.
+I assume you are familiar with the usage of the HAL interface and its drivers in LinuxCNC, please see the links below for more information on the topic.
 
-For LinuxCNC on a Raspberry Pi the HAL driver for the GPIOs is this one: [Generic driver for any GPIO supported by gpiod](https://linuxcnc.org/docs/devel/html/drivers/hal_gpio.html).
+- Generic info on LinuxCNC: [LinuxCNC website](https://linuxcnc.org/)
+- Raspberry Pi HAL driver for the GPIOs: [Generic driver for any GPIO supported by gpiod](https://linuxcnc.org/docs/devel/html/drivers/hal_gpio.html).
 
-In order to make all GPUs available you must disable the I2C and UART interface (which may be enabled by default).
-
-Edit the 'config.txt':
+To be able to access all GPIOs on the Raspberry Pi, make sure that the I2C and UART interface is not enabled, edit the 'config.txt':
 ```
 sudo nano /boot/firmware/config.txt
 ```
@@ -25,7 +22,7 @@ dtparam=i2c_arm=off
 Reboot the Raspberry Pi `sudo reboot now`
 
 
-#### GPIO mapping 
+#### GPIO mapping and HAL mapping
 The GPIO mapping (using the above HAL driver) for this Raspberry Pi board is:
 
 | GPIO | Function |
