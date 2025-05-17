@@ -21,6 +21,7 @@ I designed this board taking into account the hardware I already had to control 
 ## Software and HAL driver
 The main CNC control software is off course LinuxCN. I won't go into detail about what it is, how it works or how to install LinuxCNC on a Raspberru Pi, You can find all this information on the [LinuxCNC website](https://linuxcnc.org/)
 
+
 ### ***ARO-Master*** control box
 Hardware & firmware that implement the server/daemon for Observatory control (remote and local).  
 This is the main brains that allows you to connect and control all the equipment, open/close the roof, see weather conditions, see the sky, see the observatory interior, control user login, control the Piers etc.
