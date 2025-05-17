@@ -1,7 +1,23 @@
 # Rpi2Cnc
 
-***Rpi-2-Cnc*** is an HAT for the ***Raspberry Pi 4 and 5*** that directly exposed the GPIOs pins to control Stepper Drivers, Limit Switches, PWM Spindle, VFD, Relay, etc to the ***LinuxCNC HAL interface***.
+***Rpi-2-Cnc*** is an HAT for the ***Raspberry Pi 4 and 5*** that directly exposed the GPIOs pins to control Stepper Drivers, Limit Switches, Inputs, PWM Spindle, VFD, Relay, etc to the ***LinuxCNC HAL interface***.
 
+I made this board since all the solutions that I found to to interface the LinuxCNC controller software  and the CNC hardware using a Raspberry Pi envolved 
+I made 
+
+Hardware Interface to CNC machine
+There are multiple different ways to interface between LinuxCNC controller software, and CNC hardware (such as stepper / servo drivers, limit switches, inputs and outputs etc.)
+Interfaces include:
+
+Parallel Port
+Ethernet
+EtherCat
+PCI / PCIe
+SPI (where the computer has a native SPI interface, such as Raspberry Pi)
+USB (not realtime interface)
+A mix of different interfaces can be used. For example, a combination of EtherCat for servo drives, and parallel port for additional General Purpose Inputs / Outputs (GPIO)
+
+Some of these solutions are usable for all aspects of hardware interfacing, and some have specific roles (e.g. non-realtime GPIO, for an operator inferface).
 
 
 ***Automated Remote/Robotic Observatories*** with **Roll-Off-Roof** or non-rotating **Clamshell Domes** design.
