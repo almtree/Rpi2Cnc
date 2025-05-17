@@ -10,7 +10,7 @@ I assume you are familiar with the usage of the HAL interface and its drivers in
 - Generic info on LinuxCNC: [LinuxCNC website](https://linuxcnc.org/)
 - Raspberry Pi HAL driver for the GPIOs: [Generic driver for any GPIO supported by gpiod](https://linuxcnc.org/docs/devel/html/drivers/hal_gpio.html).
 
-To be able to access all GPIOs on the Raspberry Pi, make sure that the I2C and UART interface is not enabled, edit the 'config.txt':
+To be able to access all GPIOs on the Raspberry Pi, make sure that the I2C and UART interface are not enabled, edit the 'config.txt':
 ```
 sudo nano /boot/firmware/config.txt
 ```
