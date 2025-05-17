@@ -17,6 +17,11 @@ I designed this board taking into account the hardware I already had to control 
 - 8 inputs with hardware debounce and external pull-up (active low, can be inverted in software)
 - 12 to 24V power IN
 - Included DC-DC step down buck converter to power RPi and 5V rail
+
+This an example of the basic setup with the essential components to operate a CNC/Mill/Router:
+
+![image](https://github.com/user-attachments/assets/f2b1fe60-120e-41a3-a7bb-c05bc8d5ef47)
+
  
 ## Software and HAL driver
 The main CNC control software is off course LinuxCN. I won't go into detail about what it is, how it works or how to install LinuxCNC on a Raspberru Pi, You can find all this information on the [LinuxCNC website](https://linuxcnc.org/)
