@@ -24,13 +24,51 @@ The main CNC control software is off course LinuxCN. I won't go into detail abou
 ### HAL driver
 Hardware Abstraction Layer (HAL) is a software layer that provides hardware abstraction for operating systems such as UNIX. In short, it allows programs like LinuxCNC to use any hardware by using a driver.
 
+
+
+enable_uart=0
+dtparam=i2c_arm=off
+
+dtparam=i2c_arm=on
+
 For LinuxCNC on a Raspberry Pi the HAL driver for the GPIOs is this one: [Generic driver for any GPIO supported by gpiod](https://linuxcnc.org/docs/devel/html/drivers/hal_gpio.html).
 
+#### GPIO mapping 
+The GPIO mapping (using the above HAL driver) for this Raspberry Pi board is:
+        line   0:     "ID_SDA"       unused   input  active-high
+        line   1:     "ID_SCL"       unused   input  active-high
+        line   2:      "GPIO2"       unused   input  active-high
+        line   3:      "GPIO3"       unused   input  active-high
+        line   4:      "GPIO4"       unused   input  active-high
+        line   5:      "GPIO5"       unused   input  active-high
+        line   6:      "GPIO6"       unused   input  active-high
+        line   7:      "GPIO7"       unused   input  active-high
+        line   8:      "GPIO8"       unused   input  active-high
+        line   9:      "GPIO9"       unused   input  active-high
+        line  10:     "GPIO10"       unused   input  active-high
+        line  11:     "GPIO11"       unused   input  active-high
+        line  12:     "GPIO12"       unused   input  active-high
+        line  13:     "GPIO13"       unused   input  active-high
+        line  14:     "GPIO14"       unused   input  active-high
+        line  15:     "GPIO15"       unused   input  active-high
+        line  16:     "GPIO16"       unused   input  active-high
+        line  17:     "GPIO17"       unused   input  active-high
+        line  18:     "GPIO18"       unused   input  active-high
+        line  19:     "GPIO19"       unused   input  active-high
+        line  20:     "GPIO20"       unused   input  active-high
+        line  21:     "GPIO21"       unused   input  active-high
+        line  22:     "GPIO22"       unused   input  active-high
+        line  23:     "GPIO23"       unused   input  active-high
+        line  24:     "GPIO24"       unused   input  active-high
+        line  25:     "GPIO25"       unused   input  active-high
+        line  26:     "GPIO26"       unused   input  active-high
+        line  27:     "GPIO27"       unused   input  active-high
+ 
 
-Hardware & firmware that implement the server/daemon for Observatory control (remote and local).  
-This is the main brains that allows you to connect and control all the equipment, open/close the roof, see weather conditions, see the sky, see the observatory interior, control user login, control the Piers etc.
 
-Generic driver for any GPIO supported by gpiod
+
+
+
 
 ## License
 When I made the decision to share this project I intended to make it public, but recent developments have changed that intention.
