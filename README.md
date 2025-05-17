@@ -24,7 +24,7 @@ This an example of the basic setup with the essential components to operate a 3 
 
  
 ## Software and HAL driver
-The main CNC control software is off course LinuxCN. I won't go into detail about what it is, how it works or how to install LinuxCNC on a Raspberru Pi, You can find all this information on the [LinuxCNC website](https://linuxcnc.org/)
+The main CNC control software is off course LinuxCNC. I won't go into detail about what it is, how it works or how to install LinuxCNC on a Raspberry Pi, You can find all this information on the [LinuxCNC website](https://linuxcnc.org/)
 
 ### HAL driver
 Hardware Abstraction Layer (HAL) is a software layer that provides hardware abstraction for operating systems such as UNIX. In short, it allows programs like LinuxCNC to use any hardware by using a driver.
