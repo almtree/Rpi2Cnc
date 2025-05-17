@@ -4,9 +4,19 @@
 
 I made this board since all the solutions that I found to interface the LinuxCNC controller software and the CNC hardware using a Raspberry Pi envolved the use of a board on the Rpi to convert the GPIOs to the parallel interface, and then use a second board to interface the Parallel port with the CNC hardware itself.
 
-I designed this board taking into account the hardware I already had to control the CNC, namely DM556T stepper drivers, a VFD spindler and active low home and limit switches. 
+I designed this board taking into account the hardware I already had to control the CNC, namely DM556T stepper drivers, a VFD spindler and active low home and limit switches, up to 5 axes can be controlled and the outputs used for this are open collector type, which opens up a wide range of stepper controllers. 
 
-
+### Main features 
+- 10 open collector outputs for 5 axis (step/dir interface)
+- 1 open collector output for steppers ENABLE
+- P-Mosfet PWM controled (up to 40V and 20Amps)
+- 0-10V VFD control from PWM
+- Relayoutput
+- 2 VCC outputs (500mA and 1.5Amps)
+- 8 inputs with hardware debounce and external pull-up (active low, can be inverted in software)
+- 12 to 24V power IN
+- Included DC-DC step down buck converter to power RPi and 5V rail
+- 
 
 ***Automated Remote/Robotic Observatories*** with **Roll-Off-Roof** or non-rotating **Clamshell Domes** design.
 
