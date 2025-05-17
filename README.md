@@ -23,7 +23,8 @@ The main CNC control software is off course LinuxCN. I won't go into detail abou
 
 ### HAL driver
 Hardware Abstraction Layer (HAL) is a software layer that provides hardware abstraction for operating systems such as UNIX. In short, it allows programs like LinuxCNC to use any hardware by using a driver.
-When we use a Raspberry Pi to run LinuxCNC the HAL driver for the Raspberry GPIOs can be this one: [Generic driver for any GPIO supported by gpiod](https://linuxcnc.org/docs/devel/html/drivers/hal_gpio.html).
+
+For LinuxCNC on a Raspberry Pi the HAL driver for the GPIOs is this one: [Generic driver for any GPIO supported by gpiod](https://linuxcnc.org/docs/devel/html/drivers/hal_gpio.html).
 
 
 Hardware & firmware that implement the server/daemon for Observatory control (remote and local).  
