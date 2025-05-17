@@ -30,7 +30,9 @@ Up to 6 _Piers_ can coexist at the same observatory (this limit is a practical m
 
 ## License
 When I made the decision to share this project I intended to make it public, but recent developments have changed that intention.
-So, for now I will not share the hardware schematics, there will be two version of this hat that can be purchased:
+So, for now I will not share the hardware schematics.
+
+There will be two version of this hat that can be purchased:
 - A _full assembled_ version fully populated.
 - A _semi assembled_ version populated with only the SMD components and you can solder the connecting heads yourself.
 .
